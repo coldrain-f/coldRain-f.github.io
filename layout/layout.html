@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        header, nav, section, article, aside, footer {
+            border: 1px solid #fff;
+            text-transform: uppercase;
+            text-align: center;
+
+            color: #fff;
+        }
+
+        header {
+            height: 100px;
+            line-height: 100px;
+            background-color: #111;
+        }
+        nav {
+            height: 50x;
+            line-height: 50px;
+            background-color: #222;
+        }
+
+        div#contents {
+            display: flex;
+            flex-direction: row;
+            background-color: #333;
+        }
+
+        section {
+            text-align: left;
+            padding: 5px;
+            height: 300px;
+            width: 75%;
+            background-color: #444;
+        }
+
+        section>article {
+            height: 130px;
+            line-height: 130px;
+            background-color: #555;
+        }
+
+        aside {
+            height: 310px;
+            line-height: 300px;
+            width: 25%;
+            background-color: #666;
+        }
+        footer {
+            height: 100px;
+            line-height: 100px;
+            overflow: hidden;
+            background-color: #777;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div id="wrap">
+        <header>header</header>
+        <nav>nav</nav>
+        <div id="contents">
+            <section>
+                section
+                <article>article</article>
+                <article>article</article>
+            </section>
+
+            <aside>aside</aside>
+        </div>
+
+        <footer>footer</footer>
+    </div>
+    
+</body>
+</html>
