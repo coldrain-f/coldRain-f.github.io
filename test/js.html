@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table, tr, td, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            text-transform: uppercase;
+        }
+        th { 
+            width: 25%;
+        }
+    </style>
+
+</head>
+<body>
+
+    <table id="board">
+        <tr>
+            <th>id</th>
+            <th>age</th>
+            <th>eye color</th>
+            <th>name</th>
+        </tr>
+        <tbody></tbody>
+    </table>
+
+    <div id="one">Hello Javascript !</div>
+    
+    <script>
+        document.getElementById("one").innerText = "안녕 자바스크립트";
+
+        var debug = document.getElementById("one");
+        // window.alert(debug.innerHTML);
+        console.log(debug);
+
+    </script>
+</body>
+</html>
