@@ -1,0 +1,77 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+/* 공동 영역 */
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 16px !important; /* fixed font-size */
+    letter-spacing: -1px !important; /* 글자 사이에 간격 */
+    color: #444 !important;
+    word-wrap: break-word !important;
+    line-height: 1 !important; /* 줄 간격, 1이면 16px */
+}
+
+dl, ol, ul {
+    margin-bottom: 0 !important;
+}
+
+#container a:hover {
+    color: #000 !important;
+}
+a:link { /* a태그 링크 색상 */
+    color: #444;
+}
+a:hover { 
+    color: #FFF !important; 
+}
+
+a:visited {
+    color: #444;
+}
+
+a {
+    text-decoration: none; /* 링크의 밑줄 제거 */
+}
+
+.clear::after {
+    content: '';
+    clear: both; /* float 속성을 초기화 */
+    display: block; /* float 속성은 display를 없애는데 이를 다시 복구 */
+}
+
+.txt-right {
+    text-align: right !important;
+}
+
+.mt20 {
+    margin-top: 20px !important;
+}
+
+.w100p {
+    width: 100% !important;
+}
+/* /공통 영역 */
+
+/* 헤더 영역 */
+.on {
+    background: #32353D;
+}
+
+header {
+    height: 90px;
+    text-align: center;
+    z-index: 200; 
+    background: rgba(0, 0, 0, 0.5); /* 순서대로 R, G, B, 투명도 */
+    position: absolute; /* absolute를 주면 위치와 넓이를 지정해 줘야 한다. */
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.box-inner {
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+/* /헤더 영역 */

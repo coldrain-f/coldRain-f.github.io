@@ -28,7 +28,11 @@
     <!-- JQuery 기본 구조 만들고 Home 페이지로 이동시키기 -->
     <script>
         $(document).ready(function(){
-            
+            /*
+                루트 index.html에서 /home/index.html로 이동하는 이유는?
+                나중에 리뉴얼 되면 여기서 경로만 변경해주면 된다.
+            */
+            location.replace('/home/index.html');
         });
     </script>
 </body>
