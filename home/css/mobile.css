@@ -33,12 +33,9 @@ a {
     text-decoration: none; /* 링크의 밑줄 제거 */
 }
 
-.clear::after {
-    content: '';
-    clear: both; /* float 속성을 초기화 */
-    display: block; /* float 속성은 display를 없애는데 이를 다시 복구 */
-}
+/* /공통 영역 */
 
+/* 부트스트랩 CSS 수정 */
 .txt-right {
     text-align: right !important;
 }
@@ -50,7 +47,13 @@ a {
 .w100p {
     width: 100% !important;
 }
-/* /공통 영역 */
+
+.clear::after {
+    content: '';
+    clear: both; /* float 속성을 초기화 */
+    display: block; /* float 속성은 display를 없애는데 이를 다시 복구 */
+}
+/* /부트스트랩 CSS 수정 */
 
 /* 헤더 영역 */
 .on {
@@ -71,7 +74,29 @@ header {
 .box-inner {
     width: 100%;
     margin: 0 auto;
-    
 }
 
 /* /헤더 영역 */
+
+/* 로고 영역 */
+.header_area h1 {
+    float: none;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding: 3px 0px 0px; /* 3px(상하), 0px(좌) 0px(우) */
+}
+
+.header_area h1 a { /* 웹 접근성을 지키기 위해 a태그로 이미지를 삽입 */
+    display: inline-block;
+    width: 150px;
+    height: 80px;
+    background: url(../img/business-2684758_640.png);
+    background-size: 50px 60px !important; /* 가로 50px 세로 60px */
+    background-position: center center; /* 가로 가운데, 세로 가운데 */
+    background-repeat: no-repeat;
+    /* 들여쓰기, 이미지만 보이고 글자는 숨기기(스크린 리더기로는 읽을 수 있다) */
+    text-indent: -9999px;
+    overflow: hidden;
+}
+/* /로고 영역 */

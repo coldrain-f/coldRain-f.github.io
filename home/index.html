@@ -20,26 +20,41 @@
 <style>
 /* 모바일용 메인페이지 스타일 지정 */
 
-/* 로고 영역 */
-.header_area h1 {
-    float: none;
-    width: 100%;
-    height: 50px;
-    text-align: center;
-    padding: 3px 0px 0px; /* 3px(상하), 0px(좌) 0px(우) */
-    border: 1px solid red;
+/* 상단 메뉴 영역 */
+.openMOgnb {
+    /* gnb: global navigation bar 약자  */
+    display: block;
+    position: absolute;
+    top: 35px;
+    left: 15px;
+    width: 25px;
+}
+.hdd {
+    text-indent: -9999px;
+    position: absolute;
 }
 
-.header_area h1 a { /* 웹 접근성을 지키기 위해 a태그로 이미지를 삽입 */
-    display: inline-block;
-    width: 150px;
-    height: 80px;
-    background: url(./img/logo-2150297_640.png);
-    background-size: 50px 60px !important; /* 가로 50px 세로 60px */
-    background-position: center center; /* 가로 가운데, 세로 가운데 */
-    text-indent: -9999px; /* 들여쓰기, 이미지만 보이고 글자는 숨기기(스크린 리더기로는 읽을 수 있다) */
+.openMOgnb span {
+    box-sizing: border-box;
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 4px;
+    border-radius: 10px;
+    background: #fff;
 }
-/* /로고 영역 */
+
+.openMOgnb span + span {
+    width: 17px;
+}
+
+.openMOgnb span:last-child {
+    width: 25px;
+    margin-bottom: 0px;
+}
+
+
+/* /상단 메뉴 영역 */
 
 
 </style>
@@ -60,7 +75,12 @@ $(document).ready(function() {
 			<!-- //상단로고영역 -->
 			
 			<!-- 상단메뉴메뉴영역 -->
-			<p class="openMOgnb"><a href="#"><b class="hdd">메뉴열기</b> <span></span><span></span><span></span></a></p>
+			<p class="openMOgnb">
+                <a href="#">
+                    <b class="hdd">메뉴열기</b> 
+                    <span></span><span></span><span></span>
+                </a>
+            </p>
 			<div class="header_cont">
 				<ul class="util clear">
 					<li><a href="login.html">로그인</a></li>
