@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
     <style>
         table, tr, td, th {
             border: 1px solid black;
@@ -34,14 +36,11 @@
     </table>
 
     <div id="one">Hello Javascript !</div>
-    
+    <button type="button" id="btn">버튼</button>
     <script>
-        document.getElementById("one").innerText = "안녕 자바스크립트";
-
-        var debug = document.getElementById("one");
-        // window.alert(debug.innerHTML);
-        console.log(debug);
-
+        $(document).ready(function(){
+            $("#one").text("안녕 자바");
+        });
     </script>
 </body>
 </html>
