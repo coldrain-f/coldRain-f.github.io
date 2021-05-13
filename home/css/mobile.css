@@ -96,7 +96,7 @@ header {
     background-position: center center; /* 가로 가운데, 세로 가운데 */
     background-repeat: no-repeat;
     /* 들여쓰기, 이미지만 보이고 글자는 숨기기(스크린 리더기로는 읽을 수 있다) */
-    text-indent: -9999px;
+    
     overflow: hidden;
 }
 /* /로고 영역 */

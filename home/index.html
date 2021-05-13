@@ -53,8 +53,99 @@
 }
 
 .header_cont {
-
+    float: none;
+    width: 100%;
+    background: #31343D;
+    margin-top: 36px;
+    /* display: none; */
 }
+
+.closePop {
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 15px;
+}
+
+.closePop a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-indent: -9999px;
+    background: url(./img/btn_closeMenu.png) no-repeat;
+    background-size: 60px;
+}
+
+.util {
+    padding: 20px;
+}
+.header_cont a {
+    color: #fff;
+    font-size: 16px;
+}
+.util li {
+    float: left;
+}
+.util li::after {
+    content: '|';
+    display: inline-block;
+    padding: 0 10px;
+    color: #a2a2a3;
+    font-size: 10px;
+    position: relative;
+    top: -2px;
+}
+
+.util li:last-child::after {
+    content: '';
+    display: none;
+}
+
+.gnb {
+    float: none;
+    box-sizing: border-box;
+    padding-top: 0px;
+    height: auto;
+    border: 1px solid #83868b;
+}
+
+.gnb li {
+    float: left;
+    width: 50%;
+    text-align: left;
+    box-sizing: border-box;
+    border-bottom: 1px solid #83868b;
+}
+
+.gnb li a {
+    display: block;
+    padding: 0px 0px 0px 65px;
+    height: 60px;
+    line-height: 60px;
+    background: url(./img/ico_gnb01.png) no-repeat 10px center; /* 10px 가로간격, 세로는 가운데 정렬 */
+    background-size: 49px 56px;
+}
+
+.gnb_depth {
+     /* 2차 메뉴  */
+    display: none; 
+}
+
+/* li의 형제 li태그의 a태그들  */
+.gnb li + li a {
+    background-image: url(./img/ico_gnb02.png);
+}
+.gnb li + li + li a {
+    background-image: url(./img/ico_gnb03.png);
+}
+.gnb li + li + li + li a {
+    background-image: url(./img/ico_gnb04.png);
+}
+
+.gnb li:nth-child(2n+1) {
+    border: 1px solid #83868b;
+}
+
 
 
 /* /상단 메뉴 영역 */
@@ -113,7 +204,7 @@ $(document).ready(function() {
 					</li>
 				</ul>
                 </nav>
-				<p class="closePop"><a href="javascript:;">닫기</a></p>
+				<p class="closePop"><a href="">닫기</a></p>
 			</div>
 			<!-- //상단메뉴메뉴영역 -->
 		</div>
@@ -247,6 +338,5 @@ $(document).ready(function() {
 	<p class="to_top"><a href="#wrap" class="s_point">TOP</a></p>
 </div>
 <!-- //하단퀵메뉴영역 -->
-
 </body>
 </html>
