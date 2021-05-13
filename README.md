@@ -1,3 +1,32 @@
+#### 작업예정 : jQuery 제이쿼리 JSON 데이터 파싱
+- 외부 data.js 파일에서 json데이를 저장한 후 html에서 불러와서 파싱.
+- 외부 사이트에서 제공하는(RestAPI서버) json데이터를 html에서 불러와 파싱.
+- RestAPI서버 중 코로나19 확진자 데이터를 받아서 html에서 파싱(데이터를 분해해서 화면에 뿌려주는 작업)
+- ReatAPI서버주소(빅데이터): https://coroname.me/getdata
+
+#### 20210513(목) 작업내역
+- 픽사베이 이미지 3개: 로고1, 슬라이드 이미지1, NoImage 1 받고, 경로 적어놓기
+- 로고: https://pixabay.com/ko/illustrations/%EC%86%90%EC%97%90-%EC%9E%88%EB%8A%94-%EB%A1%9C%ED%84%B0%EC%8A%A4-%EB%A1%9C%ED%84%B0%EC%8A%A4-1889661/
+- 슬라이드이미지: https://pixabay.com/ko/photos/%EA%BB%8D%EC%A7%88-%EB%AA%A8%EB%9E%98-%EB%B9%84%EC%B9%98-%EC%A1%B0%EA%B0%9C-%EB%AC%BC%EA%B0%80-792912/
+- no_img: https://pixabay.com/ko/vectors/%ED%94%8C%EB%9E%98%EA%B7%B8-%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD-%EA%B5%AD%EA%B8%B0-%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD-3029663/
+- 작업폴더를 나누는 이유: 시청(관공서), 대학, 기업의 웹프로그램(사이트) 제작 할때, 1년간 무상 유지보수 이후 보통 2천, 리뉴얼 4천 비용이 책정
+- home폴더 기존작업물, 리뉴얼 home에 덮어쓰는 방식이 아니고,
+- 리뉴얼 할때 home2022 폴더에 작업을 하시게 됩니다.
+- 제이쿼리 코어 다운받기: min버전(압축-속도UP), 일반버전(개발-속도Normal)
+- jQuery 미처리 작업은 다음주하고, 
+- 오늘부터는 모바일 메인페이지 1개 만들어서 과제물로 제출 -> 스프링에서 프로그램 입히는 소스로 사용하게 됩니다.
+- 애니데스크(독일산): 팀뷰어(독일산) 사용하는 대신에 애니데스크를 사용.
+- html5.html, css.html, js.html 여기까지
+- jQuery 기본구조만 실습했습니다.
+
+#### 20210512(수) 작업내역
+- git clone 으로 프로젝트를 가져온 경우 아래 내용을 추가해 주셔야합니다.
+- git config --list 확인에서 user.name, user.email 없으면 아래추가.
+- 터미널에서 아래 2가지 실행
+- git config --local user.name 영문이름
+- git config --local user.email 영문이메일
+- 프로젝트를 1명 제작하는 경우 없기때문에, 2명일때 소스수정한 사람 확인용 정보 입니다.
+
 #### 20210511(화) 작업내역
 - 로렘 입숨 한글URL: http://guny.kr/stuff/klorem/#/dl-html
 - 로렘 입숨 영어URL: https://loremipsum.io/generator/
